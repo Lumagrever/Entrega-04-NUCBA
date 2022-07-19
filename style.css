@@ -113,8 +113,8 @@ button:hover {
  }
 
  .hero-box1 {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
  }
 
  .hero-box2 {
@@ -125,7 +125,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding: 40px;
+    padding: 20px;
  }
 
  .hero-box2:hover {
@@ -143,36 +143,6 @@ button:hover {
  .diboton:hover {
     background-color: var(--dorado);
     transition: 1s;
- }
-
- .info {
-    background-color: var(--rojado);
-    display: flex;
-    font-size: 20px;
-    padding: 100px;
-    text-align: justify;
-    align-items: center;
-    justify-content: space-around;
- }
-
- .info:hover {
-    background-color: var(--dorado);
-    transition: 1s;
- }
-
- .info-box2 {
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.2rem;
-    margin-left: 350px;
-    margin-right: 350px;
- }
-
- .info-box2 h4{
-    margin-bottom: 20px;
  }
 
  .sec-adventages {
@@ -194,11 +164,11 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 3em;
-    margin: 8rem;
+    margin: 4rem;
  }
 
  .container-adventages-box p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-top: 2rem;
  }
 
@@ -250,6 +220,68 @@ button:hover {
  .infocard3 img {
     height: 200px;
  }
+
+ .info {
+    background-color: var(--rojado);
+    display: flex;
+    font-size: 20px;
+    padding: 40px;
+    text-align: justify;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+ .info:hover {
+    background-color: var(--dorado);
+    transition: 1s;
+ }
+
+ .info-box2 {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-left: 360px;
+    margin-right: 360px;
+ }
+
+ .info-box2 h4{
+    margin-bottom: 20px;
+ }
+
+ .footer-container {
+    margin-top: 30px;
+    gap: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.footer-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-redes {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-logo img {
+    height: 300px;
+}
 
  #zapaimg {
     border-radius: 10px;
