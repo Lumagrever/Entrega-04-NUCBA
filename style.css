@@ -146,7 +146,6 @@ button:hover {
  }
 
  .info {
-    margin-bottom: 100px;
     background-color: var(--rojado);
     display: flex;
     font-size: 20px;
@@ -156,17 +155,24 @@ button:hover {
     justify-content: space-around;
  }
 
+ .info:hover {
+    background-color: var(--dorado);
+    transition: 1s;
+ }
+
  .info-box2 {
     display: flex;
     flex-direction: column;
     align-content: stretch;
     align-items: center;
     justify-content: center;
+    font-size: 2.2rem;
+    margin-left: 350px;
+    margin-right: 350px;
  }
 
- .info:hover {
-    background-color: var(--dorado);
-    transition: 1s;
+ .info-box2 h4{
+    margin-bottom: 20px;
  }
 
  .sec-adventages {
