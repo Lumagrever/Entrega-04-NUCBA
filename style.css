@@ -26,6 +26,7 @@
  }
 
  nav {
+     width: 100%;
      background: var(--rojado);
      display: flex;
      flex-direction: row;
@@ -34,39 +35,6 @@
      justify-items: flex-end;
      align-items: center;
      
- }
-
-ul {
-    width: 700px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
-}
-
-li {
-    list-style: none;
-    font-size: 25px;
-}
-
-li:hover {
-    padding: 7px;
-    border-radius: 7px;
-    background-color: var(--dorado);
-    transition: 0.5s;
-}
-
- img {
-     height: 200px;
- }
-
- a {
-     text-decoration: none;
-     color: var(--negro);
-     padding: 10px;
-     font-size: 30px;
  }
 
 h1 {
@@ -105,6 +73,48 @@ button:hover {
     border-style: solid;
 }
 
+.navbar img {
+    height: 200px;
+}
+
+.navbar i {
+    font-size: 36px;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--negro);
+    padding: 10px;
+    font-size: 30px;
+}
+
+.navbar ul {
+    margin-right: 200px;
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.navbar li {
+    list-style: none;
+    font-size: 25px;
+}
+
+.navbar li:hover {
+    border-radius: 7px;
+    background-color: var(--dorado);
+    transition: 0.5s;
+}
 
  .hero {
     display: flex;
@@ -289,8 +299,15 @@ button:hover {
 .icon-redes {
     display: flex;
     flex-direction: row;
-    gap: 0.5em;
+    gap: 1em;
     margin-bottom: 2rem;
+}
+
+.icon-redes a{
+    color: var(--negro);
+    text-decoration: none;
+    font-size: 2rem;
+    gap: 2em;
 }
 
 .icon-redes a:hover {
@@ -315,7 +332,8 @@ button:hover {
 
 .alumno a{
     font-size: 1rem;
-    color: var(--dorado)
+    color: var(--dorado);
+    text-decoration: none;
 }
 
 .alumno a:hover{
