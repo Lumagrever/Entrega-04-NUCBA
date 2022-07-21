@@ -34,6 +34,9 @@
      justify-content: space-between;
      justify-items: flex-end;
      align-items: center;
+     position: fixed;
+     top: 0;
+     z-index: 1;
      
  }
 
@@ -75,6 +78,7 @@ button:hover {
 
 .navbar img {
     height: 200px;
+    margin-left: 5rem;
 }
 
 .navbar i {
@@ -117,6 +121,7 @@ button:hover {
 }
 
  .hero {
+    margin-top: 250px;
     display: flex;
     flex-direction: column;
  }
@@ -351,4 +356,31 @@ button:hover {
 
 #zapaimg:hover {
     border-color: var(--rojado);
+}
+
+@media (max-width: 768px) {
+    .navbar ul{
+        background-color: var(--rojado);
+        width: 100%;
+        height: calc(100vh - 250px);
+        position: absolute;
+        top: 220px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: all 0.4s ease-out;
+    }
+
+    .navbar i{
+        display: block;
+        margin-right: 100px;
+        cursor: pointer;
+    }
+
+    #toggle-menu:checked + .navbar-list {
+        transform: translateX(0%);
+        transition: all 0.4 ease-in;
+    }
 }
