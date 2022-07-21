@@ -26,9 +26,7 @@
  }
 
  nav {
-     margin: 2%;
      background: var(--rojado);
-     border-radius: 7px;
      display: flex;
      flex-direction: row;
      align-content: center;
@@ -106,6 +104,7 @@ button:hover {
     border-width: 3px;
     border-style: solid;
 }
+
 
  .hero {
     display: flex;

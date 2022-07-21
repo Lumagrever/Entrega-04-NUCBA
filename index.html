@@ -13,25 +13,30 @@
 
 <body>
 
-    <nav>
+  <header>
+
+    <nav class="navbar">
       <!-- Hacer click en el logo llevaría al usuario al "Inicio" de la página -->
       <a href="#"><img src="Logo/Luma Transparente.png" alt="Logo"></a>
 
+      <label for="toggle-menu"> <i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="toggle-menu"> 
+
       <ul>
         <li>
-          <a href="#">Inicio</a>
+          <a class="navbar-link" href="#">Inicio</a>
         </li>
 
         <li>
-          <a href="#">Productos</a>
+          <a class="navbar-link" href="#">Productos</a>
         </li>
 
         <li>
-          <a href="#">Quienes Somos</a>
+          <a class="navbar-link" href="#quienes-somos">Quienes Somos</a>
         </li>
 
         <li>
-          <a href="#">Contacto</a>
+          <a class="navbar-link" href="#contact">Contacto</a>
         </li>
 
       </ul>
@@ -39,6 +44,8 @@
     </nav>
 
     <main>
+
+    </header>
     
       <section class="hero">
 
@@ -105,7 +112,7 @@
 
       </section>
 
-      <section class="info">
+      <section class="info" id="quienes-somos">
 
         <div class="info-box1">
 
@@ -124,7 +131,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
 
       <div class="footer-container">
 
