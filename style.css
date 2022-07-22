@@ -16,6 +16,8 @@
  body {
      height: 100%;
      width: 100%;
+     min-height: 100vh;
+     min-width: 350px;
      background: var(--degradado-principal);
      display: flex;
      flex-direction: column;
@@ -55,30 +57,9 @@ span {
     padding-right: 100px;
 }
 
-button {
-    padding: 20px;
-    border-radius: 10px;
-    background-color: var(--celeste);
-    margin: 10px;
-    cursor: pointer;
-    border-width: 3px;
-    border-style: solid;
-    font-size: 20px;
-}
-
-button:hover {
-    padding: 20px;
-    border-radius: 10px;
-    background-color: var(--rojado);
-    cursor: pointer;
-    transition: 0.5s;
-    border-width: 3px;
-    border-style: solid;
-}
-
 .navbar img {
     height: 200px;
-    margin-left: 5rem;
+    padding-left: 5rem;
 }
 
 .navbar i {
@@ -93,25 +74,24 @@ button:hover {
 .navbar a {
     text-decoration: none;
     color: var(--negro);
-    padding: 10px;
-    font-size: 30px;
+    padding: 5px;
+    font-size: 1.5rem;
 }
 
 .navbar ul {
-    margin-right: 200px;
-    width: 700px;
+    padding-right: 300px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: nowrap;
     align-items: center;
     align-content: center;
     flex-direction: row;
-    gap: 20px;
+    gap: 1.5em;
+    text-align: center;
 }
 
 .navbar li {
     list-style: none;
-    font-size: 25px;
 }
 
 .navbar li:hover {
@@ -152,12 +132,30 @@ button:hover {
     display: flex;
     justify-content: center;
     background-color: var(--rojado);
+    gap: 2rem;
+    padding: 1rem 0 1rem 0;
  }
 
- .diboton:hover {
-    background-color: var(--dorado);
-    transition: 1s;
+ .diboton button {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: var(--celeste);
+        gap: 1rem;
+        cursor: pointer;
+        border-width: 3px;
+        border-style: solid;
+        font-size: 20px;
  }
+
+ .diboton button:hover {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--dorado);
+    cursor: pointer;
+    transition: 0.5s;
+    border-width: 3px;
+    border-style: solid;
+}
 
  .sec-adventages {
     display: flex;
@@ -170,6 +168,10 @@ button:hover {
     font-size: 3rem;
  }
 
+ .container-adventages-infocards {
+    width: 100%;
+ }
+
  .container-adventages-box {
     display: flex;
     flex-direction: row;
@@ -178,7 +180,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 3em;
-    margin: 4rem;
+    padding: 4rem;
  }
 
  .container-adventages-box p {
@@ -197,6 +199,7 @@ button:hover {
     padding: 1rem;
     margin: 2rem;
  }
+
 
  .infocard1 img {
     height: 200px;
@@ -257,8 +260,9 @@ button:hover {
     align-items: center;
     justify-content: center;
     font-size: 1.6rem;
-    margin-left: 360px;
-    margin-right: 360px;
+    padding: 1rem 18rem 1rem 18rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
  }
 
  .info-box2 h4{
@@ -266,6 +270,7 @@ button:hover {
  }
 
  .footer-container {
+    width: 100%;
     padding-top: 30px;
     gap: 3em;
     display: flex;
@@ -358,11 +363,106 @@ button:hover {
     border-color: var(--rojado);
 }
 
+@media (max-width: 1260px) {
+
+    .hero-box2 {
+        display: flex;
+    }
+
+    .hero-box2 span {
+        font-size: 1.5rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hero-box2 h1 {
+        font-size: 2.5rem
+    }
+
+    .hero-box h2 {
+        font-size: 2rem;
+        padding-left: 2px;
+    }
+
+    #zapaimg {
+        height: 180px;
+    }
+
+    .info-box2 p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    nav{
+        max-width: 1200px;
+        
+    }
+
+    .navbar ul {
+        width: 400px;
+        padding-left: 100px;
+    }
+
+    .navbar img {
+        padding-left: 3rem;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: var(--negro);
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    .sec-adventages {
+        font-size: 2rem;
+    }
+
+    .container-adventages-infocards {
+        gap: 1em;
+    }
+    .container-adventages-infocards img {
+        height: 12rem;
+    }
+
+    .sec-adventages h3 {
+        text-align: center;
+    }
+
+    .container-adventages-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: flex-start;
+        gap: 3em;
+        padding: 4rem;
+        justify-content: center;
+    }
+
+    .info-box2 {
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        padding: 0 2rem 0 2rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+
+
+}
+
 @media (max-width: 768px) {
     .navbar ul{
         background-color: var(--rojado);
         width: 100%;
-        height: calc(100vh - 250px);
+        height: calc(100vh - 220px);
         position: absolute;
         top: 220px;
         left: 0;
@@ -371,16 +471,201 @@ button:hover {
         justify-content: center;
         transform: translateX(200%);
         transition: all 0.4s ease-out;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 0;
     }
 
     .navbar i{
         display: block;
-        margin-right: 100px;
+        padding-right: 100px;
         cursor: pointer;
     }
 
     #toggle-menu:checked + .navbar-list {
         transform: translateX(0%);
         transition: all 0.4 ease-in;
+        opacity: 0.9;
     }
+
+    .container-adventages-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec-adventages h3 {
+        font-size: 2rem;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .container-adventages-box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        margin: 4rem;
+    }
+
+    .container-adventages-box p {
+        font-size: 1.7rem;
+    }
+
+    .info-box2 {
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        padding: 0 2rem 0 2rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        text-align: center;
+    }
+
+    .footer-container {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        gap: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--dorado);
+    }
+    
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .footer-logo img {
+        height: 12rem;
+    }
+
 }
+
+@media (max-width: 500px) {
+
+    .hero {
+        margin-top: 178px;
+        display: flex;
+        flex-direction: column;
+     }
+    
+     .hero-box1 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+     }
+    
+     .hero-box2 {
+        display: flex;
+        background-color: var(--dorado);
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+     }
+
+     .hero-box2 span {
+        font-size: 1.1rem;
+     }
+    
+     .diboton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--dorado);
+        padding: 0 2rem 2rem 2rem;
+        gap: 0.3em;
+     }
+    
+     .diboton button {
+            padding: 5px;
+            border-width: 2px;
+            font-size: 1.2rem;
+     }
+
+    .container-adventages-box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2em;
+        margin: 1rem;
+    }
+
+    .container-adventages-box p {
+        font-size: 0.9rem;
+    }
+
+    .info-box2 {
+        font-size: 1.5rem;
+        padding: 0 1rem 0 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .info-box2 p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .footer-container {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        gap: 2em;
+    }
+    
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .footer-logo img {
+        height: 10rem;
+    }
+    
+    .footer-contact p{
+        font-size: 1rem;
+    }
+    
+    .icon-redes {
+        padding-top: 0.5rem;
+        gap: 2em;
+        margin-bottom: 2rem;
+    }
+    
+    .icon-redes a{
+        color: var(--negro);
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    .infocard2 {
+        padding: 0;
+        margin: 0;
+     }
+}
+
