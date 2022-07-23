@@ -612,13 +612,22 @@ span {
         margin: 1rem;
     }
 
-    .container-adventages-box img {
-        
+    .container-adventages-box p {
+        font-size: 1.1rem;
     }
 
-    .container-adventages-box p {
-        font-size: 1rem;
-    }
+    .infocard2 {
+        padding: 0;
+        margin: 0;
+     }
+
+     .infocard2 img{
+        height: 9rem;
+     }
+
+     .infocard3 img{
+        height: 9rem;
+     }
 
     .info-box2 {
         font-size: 1.5rem;
@@ -666,10 +675,5 @@ span {
         text-decoration: none;
         font-size: 2rem;
     }
-
-    .infocard2 {
-        padding: 0;
-        margin: 0;
-     }
 }
 
