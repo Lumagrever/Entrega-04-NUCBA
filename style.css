@@ -612,15 +612,20 @@ span {
         margin: 1rem;
     }
 
+    .container-adventages-box img {
+        
+    }
+
     .container-adventages-box p {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        text-align: center;
     }
 
     .info-box2 {
         font-size: 1.5rem;
         padding: 0 1rem 0 1rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .info-box2 p {
