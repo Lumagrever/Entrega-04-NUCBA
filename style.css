@@ -610,10 +610,11 @@ span {
         align-items: center;
         gap: 0.2em;
         margin: 1rem;
+        padding: 0 1rem 0 1rem;
     }
 
     .container-adventages-box p {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .infocard2 {
@@ -634,11 +635,7 @@ span {
         padding: 0 1rem 0 1rem;
         margin-left: 2rem;
         margin-right: 2rem;
-    }
 
-    .info-box2 p {
-        font-size: 0.9rem;
-        text-align: center;
     }
 
     .footer-container {
